@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiss Your Attitude | Premium Beauty</title>
+    <style>
+        /* CSS STYLES */
+        :root {
+            --brand-gold: #d4af37;
+            --off-white: #fdfdfd;
+            --text-black: #1a1a1a;
+            --light-grey: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Century Gothic', AppleGothic, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: var(--text-black);
+        }
+
+        /* Announcement Bar */
+        .promo-bar {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid #ececec;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--text-black);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: var(--brand-gold);
+        }
+
+        /* Hero Banner */
+        .hero {
+            background-color: var(--light-grey);
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Add image 1: Main Brand Banner */
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .btn-shop {
+            background: #000;
+            color: #fff;
+            padding: 12px 40px;
+            text-decoration: none;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+
+        /* Categories */
+        .section-padding {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            transition: 0.3s ease;
+        }
+
+        .img-placeholder {
+            background-color: #f9f9f9;
+            height: 250px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #aaa;
+            border: 1px solid #f0f0f0;
+        }
+
+        /* Products */
+        .product-name {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        .add-btn {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background: transparent;
+            border: 1px solid #000;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .add-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #fcfcfc;
+            border-top: 1px solid #eee;
+            padding: 40px 5%;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-col h4 {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer-col p, .footer-col li {
+            font-size: 12px;
+            color: #666;
+            line-height: 2;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 11px;
+            color: #999;
+            margin-top: 40px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-bar">
+        Welcome to Kiss Your Attitude | Shop our Summer Collection
+    </div>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">Kiss Your Attitude</div>
+            <ul class="nav-links">
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Skin</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero">
+            <h1>Kiss Your Attitude</h1>
+            <p>Define your beauty on your own terms.</p>
+            <a href="#" class="btn-shop">Explore Now</a>
+        </section>
+
+        <section class="section-padding">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="img-placeholder">Add image 2: Lips</div>
+                    <p>Lips</p>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder">Add image 3: Face</div>
+                    <p>Face</p>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder">Add image 4: Eyes</div>
+                    <p>Eyes</p>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder">Add image 5: Nails</div>
+                    <p>Nails</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background-color: #fafafa;">
+            <h2 class="section-title">Current Bestsellers</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="img-placeholder">Add image 6: Kiss Your Attitude Matte Powder</div>
+                    <p class="product-name">Matte Finishing Powder</p>
+                    <p class="price">₹169 <span class="old-price">₹225</span></p>
+                    <button class="add-btn">Add to Bag</button>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder">Add image 7: Kiss Your Attitude Liquid Lip</div>
+                    <p class="product-name">Hydra-Matte Lipstick</p>
+                    <p class="price">₹594 <span class="old-price">₹699</span></p>
+                    <button class="add-btn">Add to Bag</button>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder">Add image 8: Kiss Your Attitude Foundation</div>
+                    <p class="product-name">Powerplay Foundation</p>
+                    <p class="price">₹594 <span class="old-price">₹699</span></p>
+                    <button class="add-btn">Add to Bag</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Kiss Your Attitude</h4>
+                <p>The contemporary beauty expert for the modern individual.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <p>Shipping & Returns<br>Contact Us<br>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Kiss Your Attitude India. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
